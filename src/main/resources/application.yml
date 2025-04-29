@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: lock_practice_code
+  config:
+    import:
+      - optional:file:.env[.properties]
+  profiles:
+    group:
+      dev: ["dev_db"]
+    active: dev
+logging:
+  level:
+    root: info
